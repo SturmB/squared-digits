@@ -15,4 +15,22 @@ function squared_digits(int $input): int
     );
 }
 
-var_dump(squared_digits(23));
+function get_repeater(int $start): int
+{
+    // Initialize the history of numbers
+    $history = [$start];
+
+    // Begin the loop of squaring digits
+    do {
+        $currentNum = squared_digits(end($history));
+        if (in_array($currentNum, $history)) {
+            break;
+        }
+        $history[] = $currentNum;
+    } while (true);
+
+    // The duplicated number has been found; return it
+    return $currentNum;
+}
+
+var_dump(get_repeater(85));
