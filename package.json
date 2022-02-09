@@ -1,0 +1,28 @@
+{
+  "name": "squared-digits",
+  "description": "PHP assessment and refresher (IEL-SE-1)",
+  "version": "0.1.0",
+  "author": "Chris McGee",
+  "bugs": {
+    "url": "https://github.com/SturmB/squared-digits/issues"
+  },
+  "devDependencies": {
+    "@prettier/plugin-php": "^0.18.0",
+    "prettier": "^2.5.1"
+  },
+  "homepage": "https://github.com/SturmB/squared-digits#readme",
+  "keywords": [
+    "algorithm",
+    "assessment",
+    "php"
+  ],
+  "license": "ISC",
+  "main": "squared-digits.php",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/SturmB/squared-digits.git"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  }
+}
